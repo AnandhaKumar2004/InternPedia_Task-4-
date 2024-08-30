@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <link rel="stylesheet" type="text/css" href="Temperature.css" />
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="hd-container">
+            <h1>Temperature Convetor</h1>
+        </div>
+        <div class="from-container">
+            <p style="color:white;">From</p>
+            <label for="cars" style="color:yellow;">Choose a unit:</label>
+            <select name="Temperature" id="fromBox" class="box">
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="celsius">celsius</option>
+            </select>
+        </div>
+        <div class="to-container">
+            <p style="color:white;">To</p>
+            <label for="cars" style="color:yellow;">Choose a unit:</label>
+            <select name="Temperature" id="toBox" class="box">
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="celsius">celsius</option>
+            </select>
+        </div>
+        <div class="temp-container">
+            <p style="color:white;">Temperature</p>
+            <input type="text" id="tempBox" class="value">
+        </div>
+        <div class="btn-container">
+            <button class="Convert" onclick="onConvetor()">Convert</button>
+            <p style="color:red; font-size:25px;">Result:</p>
+            <p id="result" style="font-size:25px;"></p>
+        </div>
+    </div>
+    <script src="Temperature.js"></script>
+</body>
+
+</html>
